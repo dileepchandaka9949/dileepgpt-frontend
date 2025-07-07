@@ -1,23 +1,39 @@
-.container {
-  text-align: center;
+body {
   font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f2f2f2;
   padding: 30px;
 }
-#chatbox {
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 90%;
-  max-width: 500px;
+
+#payment-section,
+#chat-section {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
   margin: auto;
-  height: 300px;
-  overflow-y: scroll;
-  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-input {
-  width: 70%;
-  padding: 10px;
-}
+
 button {
   padding: 10px 20px;
-  margin-top: 10px;
+  background: #3399cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#chat-box {
+  margin-top: 20px;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#user-input {
+  width: 70%;
+  padding: 10px;
 }
