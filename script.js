@@ -2,7 +2,6 @@ const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 
-// 🧠 Function to show messages
 function addMessage(sender, message) {
   const msg = document.createElement("p");
   msg.innerHTML = `<strong>${sender}:</strong> ${message}`;
@@ -10,7 +9,6 @@ function addMessage(sender, message) {
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
-// 🚀 Send message to backend
 sendBtn.addEventListener("click", async () => {
   const message = userInput.value.trim();
   if (!message) return;
@@ -39,7 +37,6 @@ sendBtn.addEventListener("click", async () => {
   }
 });
 
-// Enable Enter key to send
 userInput.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     sendBtn.click();
