@@ -1,31 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>DileepGPT</title>
-
-  <!-- ✅ Razorpay Script (MUST) -->
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
-  <!-- ✅ Custom JS -->
-  <script src="script.js" defer></script>
-
-  <!-- ✅ Style -->
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="payment-section">
-    <h2>Welcome to DileepGPT</h2>
-    <p>Pay ₹19 to unlock the chatbot</p>
-    <button onclick="payNow()">Pay ₹19</button>
-  </div>
+  <h2>Welcome to DileepGPT</h2>
 
-  <div id="chat-section" style="display:none;">
-    <h3>DileepGPT Chat</h3>
-    <div id="chat-box"></div>
-    <input type="text" id="user-input" placeholder="Type your message" />
-    <button onclick="sendMessage()">Send</button>
-  </div>
+  <div id="chat-box" style="height: 300px; overflow-y: auto; border: 1px solid gray; padding: 10px; margin-bottom: 10px;"></div>
+
+  <input type="text" id="user-input" placeholder="Type your message..." />
+  <button id="send-btn">Send</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
